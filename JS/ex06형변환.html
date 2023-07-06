@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+
+
+
+  <script>
+
+    // 형변환 
+    // 1. 숫자로 
+
+    // A. 정수로 형변환 parseInt('바꿀 데이터');
+    let textFloat = '1.14';
+    let textInt = '14'
+    let num1 = parseInt(textFloat)
+    console.log('textfloat 출력하기 : ', textFloat);
+    console.log('정수로 형변환 : ', num1);
+
+    // B. 실수로 형변환하기 parseFloat("바꿀 내용") 
+    let num2 = parseFloat(textFloat)
+    
+    console.log('실수로 형변환하기',num2);
+
+    // C. 숫자로 형변환하기 Number('바꿀 데이터')
+    let num3 = Number(textFloat);
+    let num4 = Number(textInt)
+    console.log('숫자로 형변환1',num3);
+    console.log('숫자로 형변환2' , num4);
+
+    // 2. 문자로 
+
+    let number = 56;
+
+    // a. 숫자.toString()
+    // 특이한 성질 (n) 넣으면 n진수로 변환
+    let string = number.toString(10);
+    console.log('toString' , string, typeof(string));
+
+    // b. String('숫자')
+    let string2 = String(number);
+    console.log('String : ', string2);
+
+    // 실습 문제 
+
+  </script>
+</body>
+</html>
